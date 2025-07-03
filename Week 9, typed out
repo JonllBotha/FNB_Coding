@@ -1,0 +1,104 @@
+Functions.py
+
+#lesson 1
+def greet(name):
+            print(“hello, {name}”)
+
+greet(“Alice”)
+
+def add(a, b):
+            return a + b
+
+result ) add(2, 5)
+print(result)
+
+
+def factorial(n):
+if n==0:
+                        return 1
+            else:
+                        return n*factorial(n-1)
+
+def greet(name, greeting=”hello”):
+            print(f”{greeting}, {name}”)
+
+greet(“Bob”)
+greet(“Bob”, “Good Morning”) #changes the greeting temporarily
+
+#lesson 2 math operations
+math_operations.py
+def add(a, b):
+            return a + b
+
+def subtract(a, b):
+            return a – b
+
+
+modules.py
+import math_operations
+
+print(math_operations.add(5, 2))
+
+print(math_operations.subtract(5, 2))
+
+#lesson 3
+modules_buitin.py
+import math
+import random
+import datetime
+import os
+import sys
+
+print(math.pi)
+print(random.randint(0,10))
+print(datetime.now())
+print(os.getcwd())
+print(sys.version)
+
+#lesson 4 (watch video again)
+rectangle_calc
+calculate.py
+def area(length, width):
+            #function to calculate the area
+            return length * width
+
+def perimeter(length, width):
+            #function to calculate the perimeter
+            return 2 * (length + width)
+
+rectangle.py
+length = float(input(“enter the length of the rectangle: “))
+width = float(input(“enter the width of the rectangle: “))
+
+area = calculate.area(length, width)
+perimeter = calculate.perimeter(length, width)
+print(f“the area of the rectangle is: {area}”)
+print(f”the perimeter of the rectangle is: “{perimeter}”)
+
+#lesson 5
+exception_handling.py
+
+try:
+            print(x)
+except NameError:
+            print(“variable x is not defined”)
+except:
+            print(“an exception occurred”) # print(“something went wrong”)
+finally:
+            print”the ‘try except’ is finished”)
+
+#lesson 6 ( watch video again)
+exception_handling.py
+
+try:
+            print(x)
+except NameError:
+            print(“variable x is not defined”)
+except:
+            print(“everything went wrong”) 
+
+x = -1
+
+if x < 0:
+            raise Exception(“Sorry no numbers below zero”)
+
